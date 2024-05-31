@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header Section -->
+  <header class="bg-red-600 shadow">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-2xl font-bold">OTILO</h1>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+          <li><a href="#about" class="hover:text-blue-500">About</a></li>
+          <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+          <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url(./image/eren-yildiz-mRJgl_a914s-unsplash.jpg);">
+    <div class="text-center text-white">
+      <h2 class="text-4xl md:text-6xl font-bold text-red-700">Welcome to OTILO</h2>
+      <p class="mt-4 text-xl md:text-2xl text-red-700">I am a REALTOR</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="Real Estate" class="py-20 bg-white">
+    <div class="container mx-auto">
+      <h3 class="text-3xl font-bold text-center mb-10">REAL ESTATE</h3>
+      <div class="flex flex-wrap justify-center space-x-6">
+        <div class="bg-red-700 p-6 rounded-lg shadow-md w-40 text-center">RENT</div>
+        <div class="bg-red-700 p-6 rounded-lg shadow-md w-40 text-center">LEASE</div>
+        <div class="bg-red-700 p-6 rounded-lg shadow-md w-40 text-center">SALES</div>
+        <div class="bg-red-700 p-6 rounded-lg shadow-md w-40 text-center">SHORTLET</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-gray-700">
+    <div class="container mx-auto">
+      <h3 class="text-3xl font-bold text-center mb-10">20 UNIT PROJECT</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="./image/breno-assis-r3WAWU5Fi5Q-unsplash.jpg" alt="Project 1" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-bold mb-2">LINCOLN COURT</h4>
+            <p class="text-gray-600">10 Unit Of Studio Apartment / One Bedroom Apartment</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="./image/frames-for-your-heart-FqqiAvJejto-unsplash.jpg" alt="Project 2" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-bold mb-2">LONDON APARTMENT</h4>
+            <p class="text-gray-600">Furnished Studio Apartment</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="./image/huy-nguyen-AB-q9lwCVv8-unsplash.jpg" alt="Project 3" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-bold mb-2">JAMAICA APARTMENT</h4>
+            <p class="text-gray-600">Furnished Sitting Room</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="container mx-auto">
+      <h3 class="text-3xl font-bold text-center mb-10">Contact Me</h3>
+      <form class="max-w-xl mx-auto">
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700">Name</label>
+          <input type="text" id="name" class="w-full p-2 border border-gray-300 rounded-lg">
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700">Email</label>
+          <input type="email" id="email" class="w-full p-2 border border-gray-300 rounded-lg">
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-gray-700">Message</label>
+          <textarea id="message" class="w-full p-2 border border-gray-300 rounded-lg"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-600">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->jq 
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto flex justify-between items-center">
+       <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+      <div class="flex space-x-4">
+        <a href="#"><i class="bi bi-facebook"></i><img src="facebook-icon.png" alt="Facebook" class="w-6 h-6"></a>
+        <a href="#"><img src="twitter-icon.png" alt="Twitter" class="w-6 h-6"></a>
+        <a href="#"><img src="instagram-icon.png" alt="Instagram" class="w-6 h-6"></a>
+      </div>
+      
+    </div>
+  </footer>
+
+ </body>
+</html>
